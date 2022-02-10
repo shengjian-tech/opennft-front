@@ -1,0 +1,104 @@
+.collection{
+  width: 100%;
+  .nav{
+    width: 100%;
+  }
+  .banner{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .people{
+    width: 100%;
+    img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: -75px;
+      margin-left: 46%;
+    }
+  }
+  .content{
+    width: 50%;
+    margin: auto;
+    h2{
+      font-size: 40px;
+      text-align: center;
+    }
+    .author{
+      font-size: 16px;
+      text-align: center;
+      color: #696B71;
+      span{
+        color: #2345A7;
+        font-weight: 600;
+      }
+    }
+    .desc{
+      width: 70%;
+      margin: auto;
+      text-align: center;
+      :global{
+        .ant-col-6{
+          border: 1px solid #E9ECEE;
+        }
+      }
+      h3{
+        font-size: 22px;
+      }
+      p{
+        color: #696B71;
+      }
+    }
+    .details{
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      text-align: center;
+      color: #8A8B8B ;
+    }
+  }
+  .similar{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 160px;
+    :global{
+      .ant-card-body{
+        padding:0 5px 0 5px;
+      }
+    }
+    .card{
+      margin-top: 20px;
+      p,h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #000;
+      }
+    }
+    .right{
+      text-align: right;
+      .price{
+      
+        span{
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-color: #d9d9d9;
+          border-radius: 50%;
+          position: relative;
+          top: 3px;
+          left: -5px;
+        }
+      }
+    }   
+  }
+  .footer{
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+  }
+}

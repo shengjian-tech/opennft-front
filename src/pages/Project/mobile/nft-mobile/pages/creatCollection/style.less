@@ -1,0 +1,53 @@
+.creatCollection{
+  width: 100%;
+  .header{
+    width: 100%;
+    height: 45px;
+    background-color: #2345A7;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+    color: #fff;
+    :global{
+      .adm-nav-bar-title{
+        padding: 0;
+      }
+    }
+    img{
+      width: 35%;
+    }
+  }
+  .details{
+    width: 90%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 80px;
+    h2{
+      padding: 20px 0 10px 0;
+      font-weight: 600;
+      color: #2345A7;
+    }
+    :global{
+      .ant-form-vertical .ant-form-item-label>label, .ant-col-24.ant-form-item-label>label, .ant-col-xl-24.ant-form-item-label>label{
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    p{
+      color: gray;
+      margin: 0;
+    }
+    h3{
+      font-size: 14px;
+      font-weight: 600;
+      color: gray;
+    }
+  }
+  .footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+  }
+}

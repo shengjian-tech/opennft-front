@@ -1,0 +1,58 @@
+.list{
+  width: 100%;
+  .header{
+    width: 100%;
+    height: 45px;
+    background-color: #2345A7;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+    color: #fff;
+    :global{
+      .adm-nav-bar-title{
+        padding: 0;
+      }
+    }
+    img{
+      width: 35%;
+    }
+  }
+  .details{
+    width: 90%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    h2{
+      padding: 20px 0 10px 0;
+      font-weight: 600;
+      color: #2345A7;
+    }
+    :global{
+      .ant-tabs-tab + .ant-tabs-tab{
+        margin: 0 0 0 15px;
+      }
+      .ant-card-body{
+        padding:0 5px 5px 5px;
+      }
+    }
+    .card{
+      margin-top: 20px;
+      p,h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+      }
+    }
+    .right{
+      text-align: right;
+    }
+  }
+  .footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+  }
+}

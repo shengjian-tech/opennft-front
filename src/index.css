@@ -1,0 +1,129 @@
+/*
+全局样式，不要轻易编写全局样式
+*/
+
+html,
+body,
+#root {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f0f2f5;
+}
+
+#nprogress .bar {
+    z-index: 9999;
+}
+
+.ant-form label,
+.ant-form-explain {
+    font-size: 13px;
+}
+.governmentContractFlag .grp {
+  position: relative;
+}
+.grp::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 55%;
+  left: -10px;
+  border-left: 2px solid;
+  border-color: #A2A0A0;
+}
+.governmentContractTop .grp::before {
+  border-top: 2px solid;
+  top: 50%;
+}
+.governmentContractBottom .grp::before {
+  border-bottom: 2px solid;
+  bottom: 50%;
+}
+.governmentContractCenter .grp::before {
+  height: 100%;
+  top: 0;
+}
+/*.ant-form-item-label,*/
+/*.ant-form-item-control {*/
+/*line-height: 25px;*/
+/*}*/
+
+/*.ant-tooltip,*/
+/*.ant-modal-mask,*/
+/*.ant-modal-wrap,*/
+/*.ant-message,*/
+/*.ant-menu-submenu-popup,*/
+/*.ant-notification {*/
+/*z-index: 9999 !important;;*/
+/*}*/
+
+/*.ant-modal {*/
+/*padding-bottom: 84px !important;*/
+/*}*/
+
+/* 只在打印时显示 */
+.just-print {
+    display: none !important;
+}
+
+@media print {
+    body {
+        padding: 0 !important;
+        background: none;
+    }
+
+    /* 打印时不显示 */
+    .no-print {
+        display: none !important;
+    }
+
+    .just-print {
+        display: block !important;
+    }
+
+    .ant-message {
+        display: none !important;
+    }
+
+    .ant-modal-mask {
+        display: none !important;
+    }
+}
+
+.draggable-tabs-bar-horizontal-item:hover .draggable-tabs-bar-wrapper,
+.draggable-tabs-bar-horizontal-item.active .draggable-tabs-bar-wrapper {
+    color: #597ef7 !important;
+}
+
+.ant-tabs-tab {
+    justify-content: flex-end;
+}
+
+/* ::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px; 
+    background-color: #fff;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: #fff;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: #F5F5FF;
+    border-radius: 10px;
+  } */

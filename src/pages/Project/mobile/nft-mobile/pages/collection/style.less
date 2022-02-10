@@ -1,0 +1,107 @@
+.myself{
+  width: 100%;
+  .header{
+    width: 100%;
+    height: 45px;
+    background-color: #2345A7;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    z-index: 999;
+    color: #fff;
+    :global{
+      .adm-nav-bar-title{
+        padding: 0;
+      }
+    }
+    img{
+      width: 35%;
+    }
+  }
+  .banner{
+    width: 100%;
+    margin-top: 45px;
+    img{
+      width: 100%;
+    }
+  }
+  .people{
+    width: 100%;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-top: -40px;
+      margin-left: 40%;
+    }
+  }
+  .content{
+    width: 90%;
+    margin: auto;
+    h2{
+      font-size: 18px;
+      text-align: center;
+    }
+    .author{
+      font-size: 14px;
+      text-align: center;
+      color: #696B71;
+      span{
+        color: #2345A7;
+        font-weight: 600;
+      }
+    }
+    .desc{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      :global{
+        .ant-col-6{
+          border: 1px solid #E9ECEE;
+        }
+      }
+      h3{
+        font-size: 16px;
+      }
+      p{
+        color: #696B71;
+        font-size: 12px;
+      }
+    }
+    .details{
+      width: 100%;
+      margin: auto;
+      margin-top: 20px;
+      text-align: center;
+      color: #8A8B8B ;
+    }
+  }
+  .similar{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 80px;
+    :global{
+      .ant-card-body{
+        padding:0 5px 0 5px;
+      }
+    }
+    .card{
+      margin-top: 20px;
+      p,h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+      }
+    }
+    .right{
+      text-align: right;
+    }   
+  }
+  .footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+  }
+}
