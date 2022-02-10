@@ -57,6 +57,27 @@
 $ yarn
 ```
 
+## 启动注意事项
+
+依赖安装完成后，src/setupProxy.js 为项目本地代理文件，请及时更改您需要代理的接口地址！
+
+！！！微信版本只可以在微信打开运行，并直接在 router/AuthRoute.jsx 中填入自己申请的 appid，目前为''
+
+此为两个项目依托同一底层框架，PC 及微信端口分离，如需切换请在 router/app.router.js 中更换路由，router/AppRoute.jsx 中切换引入的 AuthRoute（分别为微信版本：AuthRoute.jsx，PC 版本：AuthRoutePC.jsx）
+并在 src/commons/PRE_ROUTER.js 中进行相关配置，以及 package.json 中更改 homepage 为相应的项目名称。
+
+两套 PRE_ROUTER.js 中配置分别如下：
+
+微信版本：
+路由前缀----/front_nft_mobile
+请求地址前缀----/api/nft
+登录页面----/nft_mobile_home
+
+PC 版本：
+路由前缀----/front_nft_pc
+请求地址前缀----/api/nft
+登录页面----/nft_home
+
 ## 开发启动
 
 ```javascript
@@ -1227,22 +1248,3 @@ const name = res?.data?.user?.name || "匿名";
 ```
 'input', 'hidden', 'number', 'textarea', 'password', 'mobile', 'email', 'select', 'select-tree', 'checkbox', 'checkbox-group', 'radio', 'radio-button', 'radio-group', 'switch', 'date', 'time', 'date-time', 'date-range', 'cascader', 'transfer', 'icon-picker'
 ```
-
-## 注义
-
-！！！微信版本只可以在微信打开运行，并直接在 router/AuthRoute.jsx 中填入自己申请的 appid，目前为''
-
-此为两个项目依托同一底层框架，PC 及微信端口分离，如需切换请在 router/app.router.js 中更换路由，router/AppRoute.jsx 中切换引入的 AuthRoute（分别为微信版本：AuthRoute.jsx，PC 版本：AuthRoutePC.jsx）
-并在 src/commons/PRE_ROUTER.js 中进行相关配置，以及 package.json 中更改 homepage 为相应的项目名称。
-
-两套 PRE_ROUTER.js 中配置分别如下：
-
-微信版本：
-路由前缀----/front_nft_mobile
-请求地址前缀----/api/nft
-登录页面----/nft_mobile_home
-
-PC 版本：
-路由前缀----/front_nft_pc
-请求地址前缀----/api/nft
-登录页面----/nft_home
