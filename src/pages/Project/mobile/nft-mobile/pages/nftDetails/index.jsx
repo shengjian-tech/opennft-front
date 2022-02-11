@@ -240,7 +240,7 @@ export default class NftDetails extends Component {
           </Row>
           <h3>{userData?.worksName}</h3>
           <h2>#{userData?.worksNum}</h2>
-          <p>购买者<Button type='link' onClick={()=>{this.setState({visibleBuyer:true,buyerData:[],hasMore:true})}}>点击查看</Button></p>
+          {/* <p>购买者<Button type='link' onClick={()=>{this.setState({visibleBuyer:true,buyerData:[],hasMore:true})}}>点击查看</Button></p> */}
           <p>商品转移冷却期：{day}天</p>
           <Card>
             <div styleName='price'>
@@ -319,7 +319,7 @@ export default class NftDetails extends Component {
         }
         closeOnAction
         />
-        <Modal
+        {/* <Modal
           visible={visibleBuyer}
           content={
             <div>
@@ -342,7 +342,7 @@ export default class NftDetails extends Component {
               text: '我知道了',
             },
           ]}
-        />
+        /> */}
         <Modal
           visible={visibleSuccess}
           content={
