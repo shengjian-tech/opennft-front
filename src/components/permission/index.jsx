@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import config from 'src/commons/config-hoc';
-const sessionStorage = window.sessionStorage;
+const localStorage = window.localStorage;
 const LOGIN_USER_STORAGE_KEY = "login-user";
 
 /**
@@ -9,7 +9,7 @@ const LOGIN_USER_STORAGE_KEY = "login-user";
  * 一般用于前端权限控制是否显示某个按钮等，一般的项目权限控制到菜单级别即可，很少会控制到功能级别
  */
 @config({
-    connect: state => ({ permissions: JSON.parse(sessionStorage.getItem(LOGIN_USER_STORAGE_KEY)).permissions || [] }),
+    connect: state => ({ permissions: JSON.parse(localStorage.getItem(LOGIN_USER_STORAGE_KEY)).permissions || [] }),
 })
 export default class Permission extends React.Component {
     static propTypes = {
